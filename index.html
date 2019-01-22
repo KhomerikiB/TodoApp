@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Todo App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Todo application">
+    <meta name="keywords" content="HTML, CSS, XML, JavaScript">
+    <meta name="author" content="Beka Khomeriki">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icon.png" sizes="16x16"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  </head>
+
+  <body>
+    <div id="box">
+
+      <header><span class="tasks">Tasks </span><span class="list">List</span></header>
+        <form action="" id="form-todo">
+            <input
+              type="text"
+              name="inputFill"
+              id="form-id"
+              placeholder="Add Todo..."
+            />
+            <button id="add-todo"> <i class="large material-icons">add</i></button>
+          </form>
+      <div id="todo-box">
+
+        <div id="uncompleted-todos"></div>
+        <div id="container-box">
+          <div class="container">Container</div>
+
+
+        </div>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Search Todo" />
+            <div style="margin-left: 1rem;">
+              <input type="checkbox" id="checkboxTodo" />
+              <label for="checkboxTodo">Show uncompleted</label>
+            </div>
+  
+          </div>
+      </div>
+    </div>
+    <script src="uuid.js"></script>
+    <script src="todo-functions.js"></script>
+    <script src="todo.js"></script>
+  </body>
+</html>
